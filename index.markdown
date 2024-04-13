@@ -4,9 +4,3 @@
 
 layout: home
 ---
-
-Testing adding text.
-
-[Post]({% post_url 2024-03-20-test-post %})
-
-***
