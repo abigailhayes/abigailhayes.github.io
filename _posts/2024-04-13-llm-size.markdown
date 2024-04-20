@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Do Large Language Models have to be so big?"
 description: Reflections on a project exploring the relationship between model compression and bias
 date:   2024-04-13 12:00:00 
