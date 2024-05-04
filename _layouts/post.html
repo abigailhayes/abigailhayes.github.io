@@ -3,11 +3,13 @@ layout: default
 ---
 
 <div class="home">
+  <a href="/">Return to home</a>
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
+  <h2 class="project-tagline">{{ page.description }}</h2>
   {%- endif -%}
 
-  <a href="/">Return to home</a>
   {{ content }}
   <a href="/">Return to home</a>
 
