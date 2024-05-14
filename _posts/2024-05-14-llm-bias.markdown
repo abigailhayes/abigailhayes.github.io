@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "How can we measure the bias of Large Language Models?"
+description: Reflections on a project exploring the relationship between model compression and bias
+date:   2024-05-14 12:00:00 
+categories: llms
+---
+
+**14th May 2024**
+
+*In the last 18 months, large language models (LLMs) have sprung into public consciousness. Now, more than ever, you can read about how AI is so advanced it will [take over our jobs](https://www.bbc.com/news/technology-65102150) but also problems with the models including [political](https://www.washingtonpost.com/technology/2023/08/16/chatgpt-ai-political-bias-research/) or [racial](https://www.scientificamerican.com/article/even-chatgpt-says-chatgpt-is-racially-biased/) biases. Whilst these models have proven to be useful tools, there clearly remains a way to go for improving how we work with them. I recently worked on a [project](https://github.com/abigailhayes/LLM-Pruning-And-Fairness) that looked at tackling two of the issues identified with LLMs: the demands or their increasing size and the bias they demonstrate. Over a series of posts, I will now explore some of the themes involved. This is the second post in the series (see [Part 1 - Do LLMs have to be so big?]({% post_url 2024-04-13-llm-size %} and [Part 2 - How can we make LLMs smaller?]({% post_url 2024-05-04-llm-compression %})).*
+
+
+
