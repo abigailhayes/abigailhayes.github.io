@@ -6,7 +6,7 @@ layout: home
 list_title: Latest blogs
 ---
 
-
+To see the coding projects themselves, go to my Github page: [abigailhayes](https://github.com/abigailhayes)
 
 ***
 
