@@ -20,7 +20,7 @@
 
 title: Abigail Hayes
 description: >- # this means to ignore newlines until "baseurl:"
-  A collection of coding projects and other blogs.
+  A collection of reflections on coding projects and other blogs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  abigailhayes
