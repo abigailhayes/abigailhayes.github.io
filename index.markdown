@@ -10,7 +10,7 @@ list_title: Latest blogs
 
 ***
 
-## Blogs by theme
+## Blogs by topic
 
 * [Artificial Intelligence]({% link ai.md %})
 
