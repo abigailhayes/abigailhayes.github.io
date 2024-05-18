@@ -3,22 +3,21 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+list_title: Latest blogs
 ---
 
 
 
 ***
 
-## Blogs by theme:
+## Blogs by theme
 
 * [Artificial Intelligence]({% link ai.md %})
 
 ***
 
-## Other links:
+## Other links
 
 * [Publications]({% link pubs.md %})
 
 ***
-
-## Latest blogs:
