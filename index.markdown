@@ -4,3 +4,19 @@
 
 layout: home
 ---
+
+***
+
+# Blogs by theme:
+
+* [Artificial Intelligence]({% link ai.md %})
+
+***
+
+# Other links:
+
+* [Publications]({% link pubs.md %})
+
+***
+
+# Latest blogs:
