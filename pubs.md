@@ -10,4 +10,4 @@ layout: default
 * [Horticulture Business Survey 2022](https://www.gov.uk/government/statistics/horticulture-business-survey/horticulture-business-survey-2022): Statistical report on a survey of UK horticulture businesses
 
 ## Data visualisation
-* [Simply Stats](https://www.instagram.com/stats_simply) - Statistics based Instagram page
+* [Simply Stats](https://www.instagram.com/stats_simply): Instagram page
