@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Do Large Language Models have to be so big?"
+description: Reflections on a project exploring the relationship between model compression and bias
+date:   2024-04-13 12:00:00 
+categories: llms
+---
+
+**13th April 2024**
+
+*In the last 18 months, large language models (LLMs) have sprung into public consciousness. Now, more than ever, you can read about how AI is so advanced it will [take over our jobs](https://www.bbc.com/news/technology-65102150) but also problems with the models including [political](https://www.washingtonpost.com/technology/2023/08/16/chatgpt-ai-political-bias-research/) or [racial](https://www.scientificamerican.com/article/even-chatgpt-says-chatgpt-is-racially-biased/) biases. Whilst these models have proven to be useful tools, there clearly remains a way to go for improving how we work with them. I recently worked on a [project](https://github.com/abigailhayes/LLM-Pruning-And-Fairness) that looked at tackling two of the issues identified with LLMs: the demands or their increasing size and the bias they demonstrate. Over a series of posts, I will now explore some of the themes involved. This is the first post in the series.*
+
+## Why is LLM size a problem?
+
+LLMs may come across as a brain inside a computer, but they are of course actually a very large and organised collection of numbers. The models have large numbers of weights which are used to produce an output from a given input. All of these numbers have to be stored, requiring huge quantities of storage and causing a number of issues:
+
+### 1. Data storage uses large amounts of energy
+
+As reported by the [BBC](https://www.bbc.com/news/technology-67053139), [research by Alex de Vries at VU Amsterdam](https://www.sciencedirect.com/science/article/abs/pii/S2542435123003653) indicates that, by 2027, AI systems globally could use 85-134 terrawatt-hours (TWh) of electricity each year. With 1TW being 10^{12}W, that is almost too much to comprehend. At a time when energy consumption and the use of fossil fuels is in the spotlight, this side of AI is clearly undesirable.
+
+### 2. Data storage is inaccessible and expensive
+
+Extensive computers and data centres are expensive to build. Whilst large corporations now have access to the necessary hardware, many companies could be discouraged by the outlay needed before reaping any benefits. When AI models require ever larger storage, this drastically reduces the range of companies or research institutes that can afford them. As a consequence, we might expect to see the benefits these models realise limited to the already wealthy portions of our global society and an increase in inequality.
+
+## What can be done?
+
+Researchers using these tools are very aware of the challenges created by the size of their models. As such, there is now a growing body of work looking to tackle model size. An obvious way to do this, would be to include less data and a smaller model to start with. But what if you want the model to learn from the information contained in that data? This is where model compression comes in. Model compression is the process of reducing the size of a model, ideally without compromising model performance. There are a number of subcategories within model compression:
+
+1. Quantisation - reducing the precision to which values are stored
+2. Knowledge distillation - using the original model to train a smaller 'child' model
+3. Pruning - removing individual weights or whole components from a model
+
+In the next blog I will delve further into the different methods which can be used for model compression.

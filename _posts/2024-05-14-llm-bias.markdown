@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "How can we measure the bias of Large Language Models?"
+description: Reflections on a project exploring the relationship between model compression and bias
+date:   2024-05-14 12:00:00 
+categories: llms
+---
+
+**14th May 2024**
+
+*In the last 18 months, large language models (LLMs) have sprung into public consciousness. Now, more than ever, you can read about how AI is so advanced it will [take over our jobs](https://www.bbc.com/news/technology-65102150) but also problems with the models including [political](https://www.washingtonpost.com/technology/2023/08/16/chatgpt-ai-political-bias-research/) or [racial](https://www.scientificamerican.com/article/even-chatgpt-says-chatgpt-is-racially-biased/) biases. Whilst these models have proven to be useful tools, there clearly remains a way to go for improving how we work with them. I recently worked on a [project](https://github.com/abigailhayes/LLM-Pruning-And-Fairness) that looked at tackling two of the issues identified with LLMs: the demands or their increasing size and the bias they demonstrate. Over a series of posts, I will now explore some of the themes involved. This is the second post in the series (see [Part 1 - Do LLMs have to be so big?]({% post_url 2024-04-13-llm-size %} and [Part 2 - How can we make LLMs smaller?]({% post_url 2024-05-04-llm-compression %})).*
+
+## What is bias?
+
+> *'Tendency to favour or dislike a person or thing, especially as a result of a preconceived opinion; partiality, prejudice.'* ([Oxford English Dictionary](https://www.oed.com/dictionary/bias_n?tab=meaning_and_use#1320706760) 3c)
+
+Bias is a concept that is most readily understood in people, as defined above. So what does it mean for a computer-based model to also show bias? Computers don't have opinions or hold grudges. But just as the biases people hold can be shaped by their previous knowledge and experiences, so LLMs are also provided with a large amount of input information that shapes their later behaviour. The consideration of bias in models is complex. It can be a fine line between a model using all available information to provide the best output and a model coming to unjustifiable conclusions based on the input.
+
+> The doctor saved my life.
+
+An example of bias in a model might be seen if it was asked to predict whether the 'doctor' referred to in this sentence is male or female. If the model was trained on historic biographies of doctors, then the overwhelming majority of examples would be male. Therefore, many models would conclude the doctor is male despite not actually having the information. In this example it might be easy to identify potential bias, but it might also be expected that biases could run deeper.
+
+## How can it be measured in LLMs?
+
+[Hovy and Prabhumoye](https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12432) identify five sources of LLM bias; the data, the annotation process, the input representations, the models, and the research design. This makes it is a complex issue to resolve and so the first stage is to be able to measure the bias of a model. Once a measure is identified, then it is possible to explore how to reduce or account for the bias.
+
+The measures that are constructed to measure bias can only serve as a proxy for the 'true bias', just as any measure of human bias does. Existing LLM bias measures fall into two categories; intrinsic and entrinsic:
+
+### Intrinsic measures
+
+Intrinsic bias measures consider the representations and values stored within the model. There are a range of different measures that have been conceived. LLMs store text information as vectors called **word embeddings** and some measures make comparisons between these to measure bias. 
+
+> e.g. Comparing the [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) of the vector difference between the pairs 'queen-woman' and 'king-man'. Here it would be expected that the vector differences might be the same, to indicate that the relationship between the word pairs is the same. If this is untrue, then it could be claimed there is some kind of bias.
+
+There are however concerns about the use of intrinsic bias measures. The words used to test the representations in the model are manually selected. The capabilities of certain measures have been [criticised](https://aclanthology.org/2021.acl-long.150) and the various measures often show no correlation.
+
+### Extrinsic measures
+
+Extrinsic bias measures are focussed on the model output and the bias it displays. This means they are task specific to whichever task a model has been trained for, but they should indicate the bias that might be carried forwards if the model is used.
+
+> e.g. [Bias-NLI](http://arxiv.org/abs/1908.09369) has been developed to correspond to the [MNLI](https://aclanthology.org/N18-1101) task. In MNLI, the model is provided with a sentence, and most indicate whether a second sentence is neutral, entailed or contradicted. For bias measurement, the sentences incorporate a selection of 'gendered' and 'non-gendered' words. The measure is constructed from the correctness of the outputs.
+
+Having now considered an overview of how models are compressed and how bias is measures, the next blog will explore the interaction between the two. Does compressing a model increase, decrease or have no effect on the bias it displays?
+
+
+
