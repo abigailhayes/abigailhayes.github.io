@@ -11,35 +11,33 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D, University of Mannheim, Germany, ongoing
+* M.Sc. Mannheim Master of Data Science, University of Mannheim, Germany, 2024
+* B.Sc. in Mathematics, University of Durham, UK, 2017
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Ongoing: Research Assistant
+  * University of Mannheim, Germany
+  * Chair of Data Science in the Economic and Social Sciences
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Febuary 2023 - July 2024: Student Research Assistant
+  * University of Mannheim, Germany
+  * Chair of Artificial Intelligence
+  * Duties included: Building a practice question recommender for students
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July 2020 - August 2022: Statistician
+  * UK Civil Service
+  * Duties included: Handling data for publishing Official Statistics and responding to evidence requests for policy decisions
   
-Skills
+* September 2017 - July 2020: Debt Advisor
+  * Bradford, UK
+  * Duties included: Delivering personalised budgets and advice to clients and negotiating with creditors
+
+Languages
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* English - Native speaker
+* German - B2
 
 Publications
 ======
@@ -58,7 +56,4 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
