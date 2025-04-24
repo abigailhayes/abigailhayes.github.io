@@ -38,7 +38,9 @@ Languages
 ======
 * English - Native speaker
 * German - B2
+* French - A2
 
+<!---
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -50,6 +52,7 @@ Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
+--->
   
 Teaching
 ======
