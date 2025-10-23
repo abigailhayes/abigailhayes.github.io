@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D, University of Mannheim, Germany, ongoing
+* Ph.D. University of Mannheim, Germany, ongoing
 * M.Sc. Mannheim Master of Data Science, University of Mannheim, Germany, 2024
 * B.Sc. in Mathematics, University of Durham, UK, 2017
 
@@ -21,7 +21,7 @@ Work experience
   * University of Mannheim, Germany
   * Chair of Data Science in the Economic and Social Sciences
 
-* Febuary 2023 - July 2024: Student Research Assistant
+* February 2023 - July 2024: Student Research Assistant
   * University of Mannheim, Germany
   * Chair of Artificial Intelligence
   * Duties included: Building a practice question recommender for students
