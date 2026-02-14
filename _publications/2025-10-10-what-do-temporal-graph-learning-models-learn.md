@@ -4,6 +4,7 @@ collection: publications
 category: preprints
 permalink: /publication/2025-10-10-what-do-temporal-graph-learning-models-learn
 #excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+venue: arXiv
 date: 2025-10-10
 paperurl: 'https://arxiv.org/abs/2510.09416'
 citation: 'Hayes et al. (2025). &quot;What Do Temporal Graph Learning Models Learn?&quot; <i>arxiv.org</i>.'
